@@ -1,18 +1,19 @@
-baseURL: https://enkce-enrobe.fr/
-languageCode: fr-fr
-title: réalisons vos travaux d'enrobé
+baseURL: http://something-fresh.org/
+languageCode: en-us
+title: Hugo Fresh Theme
 
-# module:
-#   # uncomment line below for local development of module
-#   # workspace: hugo.work
-#   imports:
-#     path: github.com/StefMa/hugo-fresh
-theme: 'custom' 
+module:
+  # uncomment line below for local development of module
+  # workspace: hugo.work
+  imports:
+    path: github.com/StefMa/hugo-fresh
+
 
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
 # Disables warnings
 disableKinds:
 - taxonomy
+- taxonomyTerm
 markup:
   goldmark:
     renderer:
@@ -27,27 +28,25 @@ params:
   # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/enkce.svg
+    image: logos/fresh.svg
     link: /
     # Default width/height. Uncomment if you need to change
-    # width: 150
-    # height: 150
+    # width: 112
+    # height: 28
   font:
     name: "Open Sans"
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Réalisons vos travaux d'enrobé
-
+    title: Manage. Deploy.
     # Hero subtitle (optional)
-    subtitle: installé á Lieusaint nous travaillons dans toute  l'Île de France,
-              Nous saurons étudier et répondre à toute demande particulière afin de personnaliser au mieux votre aménagement extérieur.
+    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
     # Button text
-    buttontext: Nous contacter
+    buttontext: Get started
     # Where the main hero button links to
     buttonlink: "#"
     # Hero image (from static/images/___)
-    image: illustrations/worker.png
+    image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
@@ -170,9 +169,9 @@ params:
       job: HR Manager
       img: 3
   section5:
-    title: demandez votre devis d’enrobé
-    subtitle: ou contactez nous au 07 86 88 14 60 / 06 26 96 93 31
-    buttonText: Envoyer
+    title: Drop us a line or two
+    subtitle: We'd love to hear from you
+    buttonText: Send Message
     # action: https://formspree.io/f/<form_id>
     # method: POST
   footer:
