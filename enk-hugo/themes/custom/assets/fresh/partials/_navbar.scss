@@ -2,8 +2,11 @@
 Navbar
 ========================================================================== */
 
+
 //Navbar
 .navbar.is-fresh {
+    background-color: black;
+    opacity: 0.9;
     position: relative;
     min-height: 3.8rem;
     transition: all .3s;
@@ -105,7 +108,7 @@ Navbar
     top: 0;
     left: 0;
     width: 100%;
-    background: $white;
+    // background: $white;
     transform: translateY(-100%);
     z-index: 100;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);

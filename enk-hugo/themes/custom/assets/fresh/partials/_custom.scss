@@ -1,0 +1,22 @@
+body {
+    background: url(../images/background.webp);
+}
+
+.landing-caption {
+    background-color: adjust-hue($color: orange, $degrees: 0);
+    opacity: 0.9;
+    border-radius: 2em;
+}
+
+
+.hero-body .landing-caption .subtitle.is-muted {
+    color: black;
+    font-weight: bolder;
+}
+
+
+.image.is-4by3 {
+    background-color: aliceblue;
+    border-radius: 3em;
+    opacity: 0.95;
+}

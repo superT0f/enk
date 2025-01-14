@@ -5,7 +5,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
   </head>
-  <body>
+  <body >
     {{ if ne .Site.Params.preloader false }}
     <!-- Preloader -->
     <div id="preloader">

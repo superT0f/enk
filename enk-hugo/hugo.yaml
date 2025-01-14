@@ -1,4 +1,4 @@
-baseURL: https://enkce-enrobe.fr/
+baseURL: https://enkce-enrobe.fr/v2/public/
 languageCode: fr-fr
 title: réalisons vos travaux d'enrobé
 
@@ -20,11 +20,11 @@ markup:
 
 params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
-  openGraph: true
+  openGraph: false
   # Used as meta data; describe your site to make Google Bots happy
   description:
   # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
-  # preloader: false
+  preloader: true
   navbarlogo:
   # Logo (from static/images/logos/___)
     image: logos/enkce.svg
@@ -40,12 +40,13 @@ params:
     title: Réalisons vos travaux d'enrobé
 
     # Hero subtitle (optional)
-    subtitle: installé á Lieusaint nous travaillons dans toute  l'Île de France,
+    subtitle: Installé á Lieusaint nous travaillons dans toute  l'Île de France.
+
               Nous saurons étudier et répondre à toute demande particulière afin de personnaliser au mieux votre aménagement extérieur.
     # Button text
     buttontext: Nous contacter
     # Where the main hero button links to
-    buttonlink: "#"
+    buttonlink: "#nous-contacter"
     # Hero image (from static/images/___)
     image: illustrations/worker.png
     # Footer logos (from static/images/logos/clients/*.svg)
@@ -63,76 +64,38 @@ params:
       url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Features
-    url: /
-  - title: Pricing
-    url: /
-  - title: Dropdown
+  - title: Photos
     sublinks:
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-  - title: Log in
-    url: /
-  - title: Sign up
-    url: /
+    - title: Avant / Après
+      url: ./#photos
+    - title: Album de nos réalisations
+      url: ./#photos
+  - title: Prix
+    url: ./#prix
+  - title: Secteur d'intervention
+    url: ./#secteur
+  - title: Contactez nous
+    url: ./#nous-contacter
     button: true
-  sidebar:
-    # Logo (from static/images/logos/___.svg)
-    logo: fresh-square
-    sections:
-    - title: User
-      icon: user
-      links:
-      - text: Profile
-        url: /
-      - text: Account
-        url: /
-      - text: Settings
-        url: /
-    - title: Messages
-      icon: envelope
-      links:
-      - text: Inbox
-        url: /
-      - text: Compose
-        url: /
-    - title: Images
-      icon: image
-      links:
-      - text: Library
-        url: /
-      - text: Upload
-        url: /
-    - title: Settings
-      icon: cog
-      links:
-      - text: User settings
-        url: /
-      - text: App settings
-        url: /
-  section1:
-    title: Great power comes
-    subtitle: with great responsibility
-    tiles:
-    - title: App builder
-      icon: mouse-globe
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Free trial
-    - title: Cloud integration
-      icon: laptop-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
-    - title: Add-ons & plugins
-      icon: plug-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
+  # section1:
+  #   title: Great power comes
+  #   subtitle: with great responsibility
+  #   tiles:
+  #   - title: App builder
+  #     icon: mouse-globe
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Free trial
+  #   - title: Cloud integration
+  #     icon: laptop-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Get started
+  #   - title: Add-ons & plugins
+  #     icon: plug-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Get started
   section2:
     title: You're here because you want the best
     subtitle: And we know it
@@ -170,11 +133,11 @@ params:
       job: HR Manager
       img: 3
   section5:
-    title: demandez votre devis d’enrobé
+    title: demandez votre devis d'enrobé
     subtitle: ou contactez nous au 07 86 88 14 60 / 06 26 96 93 31
     buttonText: Envoyer
-    # action: https://formspree.io/f/<form_id>
-    # method: POST
+    action: https://enkce-enrobe.fr/v2/form.php?id=42
+    method: POST
   footer:
     # Logo (from static/images/logos/___)
     logo: fresh-white-alt.svg
@@ -182,18 +145,18 @@ params:
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/StefMa
-      # Icons are from Font Awesome
-      icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
+    # - link: https://github.com/StefMa
+    #   # Icons are from Font Awesome
+    #   icon: github
+    # - link: https://dribbble.com/#
+    #   icon: dribbble
     - link: https://facebook.com/#
       icon: facebook
-    - link: https://twitter.com/StefMa91
-      icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
-    bulmalogo: true
+    # - link: https://twitter.com/StefMa91
+    #   icon: twitter
+    # - link: https://bitbucket.org/#
+    #   icon: bitbucket
+    bulmalogo: false
     quicklinks:
       column1:
         title: "Product"
