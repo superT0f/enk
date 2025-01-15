@@ -9,7 +9,34 @@ $(document).ready(function(){
     $(".fancybox .a img").fancybox({
 		'hideOnContentClick': false
 	});
-
+    
+    $("#contact").submit(function(e) {
+        $("#message").html("envoye en cours...").show();
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    
+        var form = $(this);
+        var actionUrl = form.attr('action');
+        
+        $.ajax({
+            type: "POST",
+            url: actionUrl,
+            data: form.serialize(), // serializes the form's elements.
+            dataType: 'json',
+            success: function(data)
+            {
+                $("#message").html(data.message);
+                //alert(data.message);
+                $( '#contact' )[0].reset();
+                // form[0].reset();
+            },
+            error:function(data)
+            {
+                $("#message").html("Une erreur est survenue lors de l'envoie de votre Message<br />merci de tenter plus tard.");
+            }
+            
+        });
+        
+    });
     //Mobile menu toggle
     if ($('.navbar-burger').length) {
         $('.navbar-burger').on("click", function(){

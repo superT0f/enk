@@ -1,0 +1,5 @@
+baseURL: /
+params:
+  section5:
+    action: /ws/form.json?id=42
+    method: POST

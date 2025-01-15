@@ -1,19 +1,30 @@
 body {
     background: url(../images/background.webp);
 }
-
+#message{
+    background: rgba(245, 219, 134, 0.7);
+    font-weight: bolder;
+    padding: 0.5em;
+    border-radius: 2em;
+    display: grid;
+    display: none;
+}
+#photos{
+    // background-color: whitesmoke;
+    background: rgba(247, 247, 245, 0.7);
+}
 .landing-caption {
     background-color: adjust-hue($color: orange, $degrees: 0);
     opacity: 0.9;
     border-radius: 2em;
+    width: fit-content;
+    padding: 2em;
 }
-
 
 .hero-body .landing-caption .subtitle.is-muted {
     color: black;
     font-weight: bolder;
 }
-
 
 .image.is-4by3 {
     background-color: aliceblue;

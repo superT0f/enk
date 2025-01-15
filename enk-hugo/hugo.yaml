@@ -1,4 +1,4 @@
-baseURL: https://enkce-enrobe.fr/v2/public/
+
 languageCode: fr-fr
 title: réalisons vos travaux d'enrobé
 
@@ -51,27 +51,23 @@ params:
     image: illustrations/worker.png
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
-    clientlogos:
-    - logo: systek
-      url: https://google.com
-    - logo: tribe
-      url: https://stefma.github.io/hugo-fresh/
-    - logo: kromo
-      url: https://github.com/StefMa/hugo-fresh
-    - logo: infinite
-      url: https://hugo-fresh.vercel.app/
-    - logo: gutwork
-      url: https://bulma.io/
+    # clientlogos:
+    # - logo: systek
+    #   url: https://google.com
+    # - logo: tribe
+    #   url: https://stefma.github.io/hugo-fresh/
+    # - logo: kromo
+    #   url: https://github.com/StefMa/hugo-fresh
+    # - logo: infinite
+    #   url: https://hugo-fresh.vercel.app/
+    # - logo: gutwork
+    #   url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Photos
-    sublinks:
-    - title: Avant / Après
-      url: ./#photos
-    - title: Album de nos réalisations
-      url: ./#photos
-  - title: Prix
-    url: ./#prix
+    url: ./#photos
+  - title: Conseil
+    url: ./#conseil
   - title: Secteur d'intervention
     url: ./#secteur
   - title: Contactez nous
@@ -97,95 +93,93 @@ params:
   #     url: /
   #     buttonText: Get started
   section2:
-    title: You're here because you want the best
-    subtitle: And we know it
-    features:
-    - title: Powerful and unified interface
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      # Icon (from static/images/illustrations/icons/___.svg)
-      icon: laptop-globe
-    - title: Cross-device synchronisation
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: doc-sync
-    - title: Nomad system
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: mobile-feed
+    title: Photos avant et apres travaux
+    subtitle: Sur le chantier
+    photos:
+    - img: 1
+      label: "rosace"
+    - img: 2
+      label: "terasse"
+    - img: 3
+      label: "rosace"
+    - img: 4
+      label: "terasse"
+    - img: 5
+      label: "rosace"
+    - img: 6
+      label: "terasse"
+    - img: 7
+      label: "rosace"
   section3:
-    title: One platform
-    subtitle: To rule them all
-    image: illustrations/mockups/app-mockup.png
-    buttonText: Get started
-    buttonLink: "#"
+    title: Secteur d'intervention
+    subtitle: Installé á Lieusaint nous travaillons dans toute l'Île de France
+    image: secteur.png
+    buttonText: Contactez nous !
+    buttonLink: "#nous-contacter"
   section4:
-    title: Our Clients love us!
-    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+    title: L'ENROBÉ, C'EST QUOI ?
+    subtitle: Un enrobé ou enrobé bitumineux est un mélange de bitume, sable et de graviers appliqué en une ou plusieurs couches pour constituer la chaussée des routes, des allées, des cours, des parkings, ect…
+              C'est un matériau « fermé », c'est à dire qu'il n'y a aucun vide.
+              Le bitume est une substance composée d'un mélange d'hydrocarbures, très visqueuse (voire solide) à la température ambiante et de couleur noire.
+              Notre engagement sur la durée est l'une de nos priorités absolues.
+    img: asphalt.jpg
     clients:
-    - name: Irma Walters
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Accountant
-      img: 1
+    - name: PRIGENT Christophe
+      quote: La compétence démontrée dans leur spécialité m’a direct rassuré.
+              Les délais furent respectés malgré des conditions climatiques délicates.
+              bon boulot !
+      job: Consultant
+      img: cpr.jpg
     - name: John Bradley
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      quote: Lorem 
       job: Financial Analyst
-      img: 2
+      img: 2.png
     - name: Gary Blackman
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      quote: Lorem
       job: HR Manager
-      img: 3
+      img: 3.png
   section5:
     title: demandez votre devis d'enrobé
     subtitle: ou contactez nous au 07 86 88 14 60 / 06 26 96 93 31
     buttonText: Envoyer
-    action: https://enkce-enrobe.fr/v2/form.php?id=42
-    method: POST
+
   footer:
     # Logo (from static/images/logos/___)
-    logo: fresh-white-alt.svg
+    logo: enkce2.svg
     # Social Media Title
-    socialmediatitle: Follow Us
+    socialmediatitle: Suivez Nous
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    # - link: https://github.com/StefMa
-    #   # Icons are from Font Awesome
-    #   icon: github
-    # - link: https://dribbble.com/#
-    #   icon: dribbble
+    - link: https://github.com/superT0f/enk
+      icon: github
     - link: https://facebook.com/#
       icon: facebook
-    # - link: https://twitter.com/StefMa91
-    #   icon: twitter
-    # - link: https://bitbucket.org/#
-    #   icon: bitbucket
     bulmalogo: false
     quicklinks:
       column1:
-        title: "Product"
-        links:
-        - text: Discover features
-          link: /
-        - text: Why choose our product?
-          link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
+        title: "Produit"
+        # links:
+        # - text: Discover features
+        #   link: /
+        # - text: Why choose our product?
+        #   link: /
+        # - text: Compare features
+        #   link: /
+        # - text: Our roadmap
+        #   link: /
+        # - text: AGB
+        #   link: /agb
       column2:
-        title: "Docs"
+        title: "Documentation"
         links:
-        - text: Get started
-          link: /
-        - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
-          link: /
+        - text: nos tarifs
+          link: ./#prix
+        - text: nos conseils
+          link: ./#faq
       column3:
         title: "Blog"
         links:
-        - text: Latest news
+        - text: Dernière news
           link: /blog/first
-        - text: Tech articles
+        - text: Articles Technique
           link: /blog/second

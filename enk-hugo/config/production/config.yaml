@@ -1,0 +1,5 @@
+baseURL: https://enkce-enrobe.fr/v2/public/
+params:
+  section5:
+    action: https://enkce-enrobe.fr/v2/form.php?id=42
+    method: POST
