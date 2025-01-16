@@ -48,7 +48,7 @@ params:
     # Where the main hero button links to
     buttonlink: "#nous-contacter"
     # Hero image (from static/images/___)
-    image: illustrations/worker.png
+    image: illustrations/goudron.png
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     # clientlogos:
@@ -64,6 +64,8 @@ params:
     #   url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
+  - title: Accueil
+    url: ./#accueil
   - title: Photos
     url: ./#photos
   - title: Conseil
