@@ -1,4 +1,4 @@
-Our custom themes is based on hugo-fresh and need bulma V0.9.4
+Our custom themes is based on [hugo-fresh](https://github.com/StefMa/hugo-fresh) theme and need bulma V0.9.4
 
 to get bulma :
 ```shell
