@@ -11,21 +11,21 @@
             "program": "lib/main.dart"
         },
         {
-            "name": "android-message-reader",
-            "cwd": "android-message-reader",
+            "name": "message_reader",
+            "cwd": "message_reader",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "android-message-reader (profile mode)",
-            "cwd": "android-message-reader",
+            "name": "message_reader (profile mode)",
+            "cwd": "message_reader",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "android-message-reader (release mode)",
-            "cwd": "android-message-reader",
+            "name": "message_reader (release mode)",
+            "cwd": "message_reader",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
