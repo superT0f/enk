@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: http://localhost:1313/
 params:
   section5:
     action: /ws/form.json?id=42
