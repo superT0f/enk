@@ -1,3 +1,6 @@
 draft/
 *~
 enk-hugo/resources/_gen/
+message_reader/android
+message_reader/web
+message_reader/windows
