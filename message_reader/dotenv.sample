@@ -1,0 +1,21 @@
+# this app need and https endpoint
+# to retrieve messages
+# in json format :
+[{
+    "date"    :"2025-01-16 21:12",
+    "name"    :"senderName",
+    "tel"     :"",
+    "message" :"sendMsg",
+    "email"   :"ejemplo@ejemplo.mx",
+    "debug"   :"anyExtraInfo"
+},{...}]
+
+# create your .env file with
+# we need split host and url
+# ie for https://yorWebsite.com/api/messages
+ENDPOINT_HOST=yorWebsite.com
+ENDPOINT_URL=api/messages
+
+# BasicAuth credentials
+ENDPOINT_LOGIN=LOGIN
+ENDPOINT_PASSWD=PASSWD
