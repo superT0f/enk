@@ -12,18 +12,42 @@ img.goudron {
     padding: 0.5em;
     border-radius: 2em;
     display: grid;
-    display: none;
+    // display: none;
 }
+.equipe {
+    background-color: burlywood;
+    border-radius: 1em;
+}
+.testimonial .author h5.quote {
+    display: none;
+    text-transform: none;
+    top : 0.5em;
+    left : 1em;
+    border-radius: 0.5em;
+    font-style: italic;
+    font-size: smaller;
+    color:orange;
+    background-color: antiquewhite;
+    z-index: 3;
+    width: 39%;
+    opacity: 0.7;
+}
+.testimonial.equipe .author h5 { bottom: 1rem;}
+.testimonial.equipe .author span {top:70%}
 #photos{
     // background-color: whitesmoke;
     background: rgba(247, 247, 245, 0.7);
 }
+// #secteur .landing-caption.title-wrapper{
+//     padding-bottom: 4em;
+// }
 .landing-caption {
     background-color: adjust-hue($color: orange, $degrees: 0);
     opacity: 0.9;
     border-radius: 2em;
     width: fit-content;
     padding: 2em;
+    margin:0 auto;
 }
 
 .hero-body .landing-caption .subtitle.is-muted {

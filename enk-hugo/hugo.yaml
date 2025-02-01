@@ -1,12 +1,6 @@
 
 languageCode: fr-fr
 title: réalisons vos travaux d'enrobé
-
-# module:
-#   # uncomment line below for local development of module
-#   # workspace: hugo.work
-#   imports:
-#     path: github.com/StefMa/hugo-fresh
 theme: 'custom' 
 
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
@@ -132,19 +126,47 @@ params:
               bon boulot !
       job: Consultant
       img: cpr.jpg
-    - name: John Bradley
-      quote: Lorem 
-      job: Financial Analyst
-      img: 2.png
-    - name: Gary Blackman
-      quote: Lorem
-      job: HR Manager
-      img: 3.png
+    - name: PRIGENT Christophe
+      quote: La compétence démontrée dans leur spécialité m’a direct rassuré.
+              Les délais furent respectés malgré des conditions climatiques délicates.
+              bon boulot !
+      job: Consultant
+      img: cpr.jpg
+    - name: PRIGENT Christophe
+      quote: La compétence démontrée dans leur spécialité m’a direct rassuré.
+              Les délais furent respectés malgré des conditions climatiques délicates.
+              bon boulot !
+      job: Consultant
+      img: cpr.jpg
+    equipe1:
+    - name: Enver KOSTANICA
+      quote: Un plan sans accro ! 
+      job: directeur de travaux
+      img: enver.jpg
+    - name: Catherine KOSTANICA
+      quote: c'est possible !
+      job: Chef d’entreprise
+      img: catherine.jpg
+    equipe2:
+    - name: Naser KOSTANICA
+      quote: Mais si ca passe ! 
+      job: conducteur de travaux
+      img: naser.jpg
+    - name: Edona KOSTANICA
+      quote: Je vous envoi cela !
+      job: assistante administrative
+      img: edona.jpg
+
   section5:
     title: demandez votre devis d'enrobé
-    subtitle: ou contactez nous au 07 86 88 14 60 / 06 26 96 93 31
-    buttonText: Envoyer
+    subtitle: contactez nous en remplissant ce formulaire 
+              et nous reviendrons vers vous dans les plus bref délaie.
 
+
+              Vous pouvez aussi nous joindre par téléphone
+    phone1: 07 86 88 14 60
+    phone2: 06 26 96 93 31
+    buttonText: Envoyer
   footer:
     # Logo (from static/images/logos/___)
     logo: enkce2.svg
@@ -156,32 +178,17 @@ params:
       icon: github
     - link: https://facebook.com/#
       icon: facebook
-    bulmalogo: false
     quicklinks:
+
       column1:
-        title: "Produit"
-        # links:
-        # - text: Discover features
-        #   link: /
-        # - text: Why choose our product?
-        #   link: /
-        # - text: Compare features
-        #   link: /
-        # - text: Our roadmap
-        #   link: /
-        # - text: AGB
-        #   link: /agb
-      column2:
-        title: "Documentation"
+        title: "Contact"
         links:
-        - text: nos tarifs
-          link: ./#prix
-        - text: nos conseils
-          link: ./#faq
+        - text : "Ecrivez nous"
+          link: ./#nous-contacter
       column3:
-        title: "Blog"
+        title: "A propos"
         links:
-        - text: Dernière news
-          link: /blog/first
-        - text: Articles Technique
-          link: /blog/second
+        - text: © ENK-CE enrobé 2025
+                36 Mail des Pépinières, 77127 Lieusaint.
+          link: https://www.pappers.fr/entreprise/enkce-813505120
+

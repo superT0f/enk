@@ -3,6 +3,8 @@
 {{- $img    := index $section4 "img" }}
 {{- $subtitle := index $section4 "subtitle" }}
 {{- $clients  := index $section4 "clients" }}
+{{- $equipe1  := index $section4 "equipe1" }}
+{{- $equipe2  := index $section4 "equipe2" }}
 <section class="section is-medium section-secondary" id="conseil">
   <div class="container">
 
@@ -14,24 +16,67 @@
       <h3 class="subtitle is-5 light-text">{{ . }}</h3>
       {{- end }}
     </div>
+    <div class="divider is-centered"></div>
+    <br /><br /><br />
+    <div class="title-wrapper has-text-centered columns landing-caption">
+      <h2 class="title is-2">L'équipe</h2>
+    </div>
 
-    <div class="content-wrapper">
+
       <div class="columns is-vcentered">
-        {{- range $clients }}
-        <div class="column is-4">
-          <figure class="testimonial">
-            <blockquote>
-              {{ .quote }}
-            </blockquote>
+        {{- range $equipe1 }}
+        <div class="column">
+          <figure class="testimonial equipe">
             <div class="author">
-              <img src="{{ printf "images/illustrations/faces/%s" (string .img) | relURL }}" alt=""/>
+              <img src="{{ printf "images/equipe/%s" (string .img) | relURL }}" alt="{{ .name }}"/>
               <h5>{{ .name }}</h5>
               <span>{{ .job }}</span>
+              <h5 class="quote">{{ .quote }}</h5>
             </div>
           </figure>
         </div>
         {{- end }}
       </div>
+
+      <div class="columns is-vcentered">
+        {{- range $equipe2 }}
+        <div class="column ">
+          <figure class="testimonial equipe">
+            <div class="author">
+              <img src="{{ printf "images/equipe/%s" (string .img) | relURL }}" alt="{{ .name }}"/>
+              <h5>{{ .name }}</h5>
+              <span>{{ .job }}</span>
+              <h5 class="quote">{{ .quote }}</h5>
+            </div>
+          </figure>
+        </div>
+        {{- end }}
+      </div>
+  </div>
+  <br /><br /><br /><br />
+  <div class="title-wrapper has-text-centered columns">
+    <div class="divider is-right"></div>
+        <h2 class="title is-2">les clients parlent</h2>
+  </div>
+  <div class="content-wrapper">
+    <div class="columns is-vcentered">
+   
+      
+
+      {{- range $clients }}
+      <div class="column is-4">
+        <figure class="testimonial">
+          <blockquote>
+            {{ .quote }}
+          </blockquote>
+          <div class="author">
+            <img src="{{ printf "images/illustrations/faces/%s" (string .img) | relURL }}" alt=""/>
+            <h5>{{ .name }}</h5>
+            <span>{{ .job }}</span>
+          </div>
+        </figure>
+      </div>
+      {{- end }}
     </div>
   </div>
 </section>

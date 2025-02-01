@@ -7,11 +7,17 @@
 {{- $action     := index $section5 "action" }}
 {{- $method     := index $section5 "method" }}
 {{- $buttonText := index $section5 "buttontext" | default "Send Message" }}
+{{- $phone1   := index $section5 "phone1" }}
+{{- $phone2   := index $section5 "phone2" }}
 <section class="section section-light-grey is-medium" id="nous-contacter">
   <div class="container" >
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">{{ $title }}</h2>
       <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <h3 class="subtitle is-5 is-muted">
+        <a href="tel:{{ $phone1 }}">📞{{ $phone1 }}</a> |
+        <a href="tel:{{ $phone2 }}">📞{{ $phone2 }}</a>
+      </h3>
       <div class="divider is-centered"></div>
     </div>
 
@@ -32,7 +38,7 @@
               <div class="column is-6">
                 <label class="checkbox input is-medium">
                   <input name="robot" type="checkbox" />
-                  Je ne suis pas un robot
+                  pas un robot
                 </label>
               </div>
 
